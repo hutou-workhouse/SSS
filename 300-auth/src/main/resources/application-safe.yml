@@ -1,0 +1,6 @@
+swagger:
+  enable: true
+  
+sss:
+  service:
+    userinfo: me.helllp.sss.common.services.impl.DemoUserInfoService

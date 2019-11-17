@@ -1,0 +1,4 @@
+# org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+#	me.helllp.sss.data.H2DataAutoConfig
+# org.springframework.context.ApplicationListener=\
+	

@@ -1,0 +1,17 @@
+swagger:
+  enable: true
+  
+sss:
+  service:
+    userinfo: me.helllp.sss.common.services.impl.DemoUserInfoService
+  dbconfig:
+    dbtype: h2
+
+spring:
+  h2:
+    console:
+      path: /h2
+      enabled: true
+      settings:
+        web-allow-others: true
+        
