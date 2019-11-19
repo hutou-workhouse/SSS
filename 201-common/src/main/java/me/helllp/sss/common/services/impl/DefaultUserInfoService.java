@@ -18,4 +18,10 @@ public class DefaultUserInfoService implements UserInfoService{
 	public void initService(Environment e) {
 	}
 
+	@Override
+	public String getUserToken(String account) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }

@@ -9,5 +9,18 @@ import me.helllp.sss.data.bean.UserInfoBean;
  *
  */
 public interface UserInfoService extends InitializeService{
+	/**
+	 * 获取用户信息
+	 * 
+	 * @return
+	 */
 	public UserInfoBean getUserInfo();
+	
+	/**
+	 * 根据账号获取用户的登录token
+	 * 
+	 * @param account
+	 * @return
+	 */
+	public String getUserToken(String account);
 }
