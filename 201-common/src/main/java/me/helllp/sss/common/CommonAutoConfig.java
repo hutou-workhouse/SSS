@@ -10,6 +10,7 @@ import me.helllp.sss.data.service.UserDataService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.EnvironmentAware;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.PropertySource;
 import org.springframework.core.Ordered;
@@ -25,6 +26,7 @@ import org.springframework.core.env.Environment;
 @Configuration
 @Order(Ordered.HIGHEST_PRECEDENCE)
 @PropertySource("common.properties")
+@ComponentScan("me.helllp.sss.common.config")
 public class CommonAutoConfig implements EnvironmentAware{
 
 	private Environment env;

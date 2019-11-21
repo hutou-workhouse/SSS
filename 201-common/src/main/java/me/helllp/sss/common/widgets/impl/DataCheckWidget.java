@@ -6,12 +6,12 @@ import me.helllp.sss.common.widgets.RequestWidget;
 import me.helllp.sss.common.widgets.Widget;
 
 /**
- * 重放攻击防护挂件
+ * 数据鉴权挂件
  * 
  * @author 林晓明
  *
  */
-public class ReplayDefineWidget implements RequestWidget{
+public class DataCheckWidget implements RequestWidget{
 
 	@Override
 	public void setWidgetInfo(WidgetBean bean) {
@@ -42,5 +42,4 @@ public class ReplayDefineWidget implements RequestWidget{
 		// TODO Auto-generated method stub
 		
 	}
-
 }

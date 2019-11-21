@@ -1,6 +1,6 @@
 package me.helllp.sss.authentication;
 
-import me.helllp.sss.common.services.UserInfoService;
+import lombok.extern.log4j.Log4j2;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -13,14 +13,13 @@ import org.springframework.context.ConfigurableApplicationContext;
  *
  */
 @SpringBootApplication
+@Log4j2
 public class AuthRun {
 
 	public static void main(String[] args) {
 		ConfigurableApplicationContext config = SpringApplication.run(AuthRun.class, args);
+		log.info("=======started========",config.getApplicationName());
 		
-		UserInfoService bean = config.getBean(UserInfoService.class);
-		bean.getUserInfo();
-		System.out.println(bean);
 	}
 
 }

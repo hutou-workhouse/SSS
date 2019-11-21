@@ -1,5 +1,6 @@
 package me.helllp.sss.common.widgets;
 
+import me.helllp.sss.common.bean.WidgetBean;
 import me.helllp.sss.common.exception.WidgetRunException;
 
 /**
@@ -10,11 +11,18 @@ import me.helllp.sss.common.exception.WidgetRunException;
  */
 public interface Widget {
 	/**
-	 * 挂件的排序，数字小的先执行
+	 * 设置挂件信息
+	 * 
+	 * @param bean
+	 */
+	public void setWidgetInfo(WidgetBean bean);
+	
+	/**
+	 * 获取挂件配置信息
 	 * 
 	 * @return
 	 */
-	public int order();
+	public WidgetBean getWidgetInfo();
 	
 	/**
 	 * 获取下一个挂件
@@ -24,15 +32,14 @@ public interface Widget {
 	public Widget next();
 	
 	/**
+	 * 设置下一个挂件
+	 * 
+	 * @param w
+	 */
+	public void setNext(Widget w);
+	
+	/**
 	 * 挂件执行
 	 */
 	public void run() throws WidgetRunException;
-	
-	/**
-	 * 注册挂件，返回挂件链的TOP
-	 * 
-	 * @param w
-	 * @return
-	 */
-	public Widget register(Widget w);
 }
